@@ -6,6 +6,7 @@ form.addEventListener('submit', e => {
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     .then(response => {
       alert("Dados Cadastrados com Sucesso!")
+      console.log(form)
     })
     .catch(error => console.error('Error!', error.message))
 })
