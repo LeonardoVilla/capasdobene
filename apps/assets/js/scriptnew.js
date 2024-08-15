@@ -7,14 +7,14 @@ form.addEventListener('submit', e => {
   // Captura dos dados pelos IDs
   //capa	capas	nomecapa	envio	pagamento	nomecliente	emailcliente	telefonecliente
   const data = {
-    campo1: document.getElementById('capa').value,
+    campo1: document.getElementsByName('capa')[0].value,
     campo2: document.getElementById('capas').value,
     campo3: document.getElementById('nomecapa').value,
-    campo3: document.getElementById('envio').value,
-    campo3: document.getElementById('pagamento').value,
-    campo3: document.getElementById('nomecliente').value,
-    campo3: document.getElementById('emailcliente').value,
-    campo3: document.getElementById('telefonecliente').value,
+    campo4: document.getElementById('envio').value,
+    campo5: document.getElementById('pagamento').value,
+    campo6: document.getElementById('nomecliente').value,
+    campo7: document.getElementById('emailcliente').value,
+    campo8: document.getElementById('telefonecliente').value,
     // Adicione outros campos conforme necessário
   };
 
