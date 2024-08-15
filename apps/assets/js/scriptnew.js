@@ -18,12 +18,10 @@ form.addEventListener('submit', e => {
     // Adicione outros campos conforme necessário
   };
 
+  console.log(data);
+
   // Envio dos dados
-  fetch(scriptURL, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
+  fetch(scriptURL, { method: 'POST', headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(data)
   })
   .then(response => {
