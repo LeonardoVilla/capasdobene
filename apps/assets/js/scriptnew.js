@@ -15,7 +15,7 @@ form.addEventListener('submit', e => {
     campo6: document.getElementById('nomecliente').value,
     campo7: document.getElementById('emailcliente').value,
     campo8: document.getElementById('telefonecliente').value,
-    campo9: 'new Date().toString()',
+    campo9: new Date().toString(),
     // Adicione outros campos conforme necessário
   };
 
