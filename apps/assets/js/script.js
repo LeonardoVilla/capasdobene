@@ -5,7 +5,7 @@ form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     .then(response => {
-      alert("Dados Cadastrados com Sucesso!")
+      alert("Dados Cadastrados com Sucessos!")
       console.log(form)
     })
     .catch(error => console.error('Error!', error.message))
